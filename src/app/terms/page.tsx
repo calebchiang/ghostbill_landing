@@ -144,10 +144,10 @@ export default function TermsPage() {
           <p>
             If you have questions about these Terms, please contact us at{" "}
             <a
-              href="mailto:legal@ghostbill.app"
+              href="mailto:calebchiang1002@gmail.com"
               className="underline underline-offset-4"
             >
-              legal@ghostbill.app
+              calebchiang1002@gmail.com
             </a>
             .
           </p>

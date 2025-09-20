@@ -28,8 +28,7 @@ export default function PrivacyPage() {
           <h2 className="text-xl font-semibold">Information We Collect</h2>
           <ul className="list-disc pl-5 space-y-2">
             <li>
-              <span className="font-medium">Account Information</span> (e.g.,
-              name, email) when you sign up or contact support.
+              <span className="font-medium">Account Information</span> (e.g. email) when you sign up or contact support.
             </li>
             <li>
               <span className="font-medium">Financial Activity You Enter</span>{" "}
@@ -153,10 +152,10 @@ export default function PrivacyPage() {
           <p>
             Questions or requests about this Policy? Contact us at{" "}
             <a
-              href="mailto:privacy@ghostbill.app"
+              href="mailto:calebchiang1002@gmail.com"
               className="underline underline-offset-4"
             >
-              privacy@ghostbill.app
+              calebchiang1002@gmail.com
             </a>
             .
           </p>
