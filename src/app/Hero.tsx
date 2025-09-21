@@ -12,10 +12,18 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="mt-12 flex justify-center space-x-0">
+      <div className="mt-12 flex justify-center -space-x-70">
         <Image
           src="/mockup_1.png"
           alt="GhostBill app screenshot 1"
+          width={500}
+          height={560}
+          className="rounded-xl drop-shadow-2xl"
+          priority
+        />
+        <Image
+          src="/mockup_3.png"
+          alt="GhostBill app screenshot 2"
           width={500}
           height={560}
           className="rounded-xl drop-shadow-2xl"
