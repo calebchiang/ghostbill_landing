@@ -8,13 +8,15 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen px-6 py-16 flex items-start justify-center">
-      <article className="w-full max-w-3xl space-y-6">
+    <main className="min-h-screen px-6 py-16 flex items-start justify-center bg-zinc-900">
+      <article className="w-full max-w-3xl space-y-6 text-zinc-200">
         <header className="space-y-2">
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
             Privacy Policy
           </h1>
-          <p className="text-sm text-zinc-600">Last updated: {new Date().toLocaleDateString()}</p>
+          <p className="text-sm text-zinc-400">
+            Last updated: {new Date().toLocaleDateString()}
+          </p>
         </header>
 
         <p>
@@ -25,10 +27,13 @@ export default function PrivacyPage() {
         </p>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold">Information We Collect</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">
+            Information We Collect
+          </h2>
           <ul className="list-disc pl-5 space-y-2">
             <li>
-              <span className="font-medium">Account Information</span> (e.g. email) when you sign up or contact support.
+              <span className="font-medium">Account Information</span> (e.g.
+              email) when you sign up or contact support.
             </li>
             <li>
               <span className="font-medium">Financial Activity You Enter</span>{" "}
@@ -45,14 +50,16 @@ export default function PrivacyPage() {
               receipt photos) for optional features like scanning.
             </li>
           </ul>
-          <p className="text-sm text-zinc-600">
+          <p className="text-sm text-zinc-400">
             We do not collect precise location or your phone contacts. We do not
             sell personal data.
           </p>
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold">How We Use Your Information</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">
+            How We Use Your Information
+          </h2>
           <ul className="list-disc pl-5 space-y-2">
             <li>Provide and operate app features you request.</li>
             <li>Personalize the experience (e.g., charts, reminders).</li>
@@ -63,14 +70,16 @@ export default function PrivacyPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold">Sharing & Disclosures</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">
+            Sharing & Disclosures
+          </h2>
           <p>
             We do not sell your personal information. We may share limited data
             with service providers who process it on our behalf and under
             contract (e.g., cloud hosting, authentication, analytics, error
             reporting). These providers may process data in other countries.
           </p>
-          <p className="text-sm text-zinc-600">
+          <p className="text-sm text-zinc-400">
             Example service providers may include our authentication/database
             provider and crash/analytics tools. They are only permitted to use
             your information to provide services to GhostBill.
@@ -82,7 +91,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold">Data Retention</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">Data Retention</h2>
           <p>
             We retain personal information for as long as needed to provide the
             service and for legitimate business or legal purposes. If you delete
@@ -92,7 +101,9 @@ export default function PrivacyPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold">Your Choices & Rights</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">
+            Your Choices & Rights
+          </h2>
           <ul className="list-disc pl-5 space-y-2">
             <li>
               You can view, edit, or delete data you’ve entered within the app.
@@ -108,7 +119,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold">Security</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">Security</h2>
           <p>
             We use reasonable administrative, technical, and organizational
             measures to protect your information (e.g., encryption in transit,
@@ -118,7 +129,9 @@ export default function PrivacyPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold">Children’s Privacy</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">
+            Children’s Privacy
+          </h2>
           <p>
             GhostBill is not directed to children under 13, and we do not
             knowingly collect personal information from children. If you believe
@@ -128,7 +141,9 @@ export default function PrivacyPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold">International Users</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">
+            International Users
+          </h2>
           <p>
             Your information may be processed and stored in countries other than
             your own. By using GhostBill, you consent to the transfer of
@@ -138,7 +153,9 @@ export default function PrivacyPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold">Changes to This Policy</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">
+            Changes to This Policy
+          </h2>
           <p>
             We may update this Policy from time to time. We will post the
             updated version here and update the “Last updated” date above. If
@@ -148,12 +165,12 @@ export default function PrivacyPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold">Contact Us</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">Contact Us</h2>
           <p>
             Questions or requests about this Policy? Contact us at{" "}
             <a
               href="mailto:calebchiang1002@gmail.com"
-              className="underline underline-offset-4"
+              className="underline underline-offset-4 text-indigo-400 hover:text-indigo-300"
             >
               calebchiang1002@gmail.com
             </a>
