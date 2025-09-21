@@ -1,9 +1,29 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 1 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.25 }
+  }
+};
+
+const item = {
+  hidden: { opacity: 0, y: 10 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" }
+  }
+};
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen px-6 py-16 text-center bg-zinc-900">
-      <div className="max-w-4xl">
+    <section className="relative flex flex-col items-center justify-center min-h-screen px-6 py-16 text-center bg-zinc-900 overflow-hidden">
+      <div className="max-w-4xl relative z-10">
         <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-tight text-zinc-100">
           Take Control of Your Spending
         </h1>
@@ -12,24 +32,38 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="mt-12 flex justify-center -space-x-70">
-        <Image
-          src="/mockup_1.png"
-          alt="GhostBill app screenshot 1"
-          width={500}
-          height={560}
-          className="rounded-xl drop-shadow-2xl"
-          priority
-        />
-        <Image
-          src="/mockup_3.png"
-          alt="GhostBill app screenshot 2"
-          width={500}
-          height={560}
-          className="rounded-xl drop-shadow-2xl"
-          priority
-        />
+      <div className="absolute bottom-35 flex justify-center items-center">
+        <div className="w-[500px] h-[300px] rounded-full bg-indigo-600/20 blur-3xl" />
       </div>
+
+      <motion.div
+        className="mt-12 flex justify-center -space-x-80 relative z-10"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
+        <motion.div variants={item}>
+          <Image
+            src="/mockup_1.png"
+            alt="GhostBill app screenshot 1"
+            width={600}
+            height={560}
+            className="rounded-xl drop-shadow-2xl"
+            priority
+          />
+        </motion.div>
+
+        <motion.div variants={item}>
+          <Image
+            src="/mockup_3.png"
+            alt="GhostBill app screenshot 2"
+            width={600}
+            height={560}
+            className="rounded-xl drop-shadow-2xl"
+            priority
+          />
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
