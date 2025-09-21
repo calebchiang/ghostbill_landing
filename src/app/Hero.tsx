@@ -38,7 +38,7 @@ export default function Hero() {
       </div>
 
       <motion.div
-        className="mt-12 flex justify-center -space-x-80 relative z-10"
+        className="mt-12 flex justify-center -space-x-70 relative z-10"
         variants={container}
         initial="hidden"
         animate="show"
