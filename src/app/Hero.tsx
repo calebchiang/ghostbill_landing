@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
-const container = {
+const container: Variants = {
   hidden: { opacity: 1 },
   show: {
     opacity: 1,
@@ -11,12 +11,12 @@ const container = {
   }
 };
 
-const item = {
+const item: Variants = {
   hidden: { opacity: 0, y: 10 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" }
+    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] }
   }
 };
 
@@ -32,7 +32,8 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="absolute bottom-35 flex justify-center items-center">
+      {/* Indigo Glow (positioned behind screenshots) */}
+      <div className="absolute bottom-32 left-1/2 -translate-x-1/2 transform">
         <div className="w-[500px] h-[300px] rounded-full bg-indigo-600/20 blur-3xl" />
       </div>
 
