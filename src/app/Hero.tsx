@@ -32,7 +32,7 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Indigo Glow (positioned behind screenshots) */}
+      {/* Indigo Glow (positioned behind screenshots) ⬇️ */}
       <div className="absolute bottom-32 left-1/2 -translate-x-1/2 transform">
         <div className="w-[500px] h-[300px] rounded-full bg-indigo-600/20 blur-3xl" />
       </div>
