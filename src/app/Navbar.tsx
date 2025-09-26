@@ -18,16 +18,18 @@ export default function Navbar() {
       <div className="flex items-center space-x-4">
         <Link
           href="/support"
-          className="text-zinc-100 font-medium hover:text-zinc-300 transition"
+          className="hidden sm:inline-block text-zinc-100 font-medium hover:text-zinc-300 transition"
         >
           Support
         </Link>
-        <Link
-          href="#"
-          className="px-5 py-2 rounded-full bg-zinc-100 text-zinc-900 font-medium hover:bg-zinc-200 transition"
+        <a
+          href="https://apps.apple.com/app/idYOUR_APPLE_ID"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-5 py-2 rounded-lg bg-zinc-100 text-zinc-900 font-medium hover:bg-zinc-200 transition"
         >
           Download
-        </Link>
+        </a>
       </div>
     </nav>
   );

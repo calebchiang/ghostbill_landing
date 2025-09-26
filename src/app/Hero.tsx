@@ -30,6 +30,22 @@ export default function Hero() {
         <p className="mt-6 text-lg sm:text-xl text-zinc-300">
           No more guessing. Begin your journey towards stress-free finance.
         </p>
+
+        <div className="mt-8 flex justify-center">
+          <a
+            href="https://apps.apple.com/us/app/ghostbill/id6752739246"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/black.svg"
+              alt="Download on the App Store"
+              width={180}
+              height={60}
+              priority
+            />
+          </a>
+        </div>
       </div>
 
       {/* Indigo Glow (positioned behind screenshots) ⬇️ */}
