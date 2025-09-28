@@ -23,7 +23,7 @@ export default function Navbar() {
           Support
         </Link>
         <a
-          href="https://apps.apple.com/app/idYOUR_APPLE_ID"
+          href="https://apps.apple.com/us/app/ghostbill/id6752739246"
           target="_blank"
           rel="noopener noreferrer"
           className="px-5 py-2 rounded-lg bg-zinc-100 text-zinc-900 font-medium hover:bg-zinc-200 transition"
